@@ -315,11 +315,11 @@ const Calculators = ({ showLiveResult, scientific: showScientific, customize, th
             <TouchableOpacity style={styles.button} onPressIn={() => functionPressed("sqrt(", "square root = √x")}>
                 <StyledText style={styles.button}>√</StyledText>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => buttonPressed("(", `long press for entering ")"`)} onLongPress={() => buttonPressed(")")} >
-                <StyledText style={styles.button}>( )</StyledText>
+            <TouchableOpacity style={styles.button} onPress={() => buttonPressed("(")}>
+                <StyledText style={styles.button}>(</StyledText>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPressIn={() => buttonPressed("!", "Factorial")}>
-                <StyledText style={styles.button}>n!</StyledText>
+            <TouchableOpacity style={styles.button} onPressIn={() => buttonPressed(")")}>
+                <StyledText style={styles.button}>)</StyledText>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPressIn={() => buttonPressed("%", " x % y (x modulo y)")}>
                 <StyledText style={styles.button}>%</StyledText>
