@@ -10,13 +10,13 @@ ln.transform = (num) => ln(num);
 Mathjs.import({ ln: ln })
 
 
-const Calculators = ({ showLiveResult, scientific: showScientific, customize, theme, haptics, history, showTooltip }) => {
+const Calculators = ({ showLiveResult, scientific: showScientific, customize, theme, haptics = true, history, showTooltip }) => {
     const [expr, setExpr] = useState([0]);
     const [result, setResult] = useState(0);
     const [equalled, setEqualled] = useState(false);
     const [inverted, setInverted] = useState(false);
     const [tooltip, setTooltip] = useState("");
-    const canVibrate = haptics || true;
+    const canVibrate = haptics;
     const historyEnabled = history || false;
     const tooltipEnabled = showTooltip || false;
 
