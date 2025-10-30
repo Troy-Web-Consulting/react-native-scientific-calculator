@@ -2,7 +2,7 @@
   "name": "react-native-scientific-calculator",
   "description": "Themable Basic and Scientific Calculator for React Native",
   "author": "Rohan Gaikwad",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "index.js",
   "scripts": {
   },
@@ -13,7 +13,7 @@
     "mathjs": "^9.4.4"
   },
   "peerDependencies": {
-    "react": "^18.2.0",
+    "react": "^19.0.0",
     "react-native": "*"
   },
   "repository": {
